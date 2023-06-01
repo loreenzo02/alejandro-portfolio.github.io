@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Futura', Arial, sans-serif;
+    background-image: url(images/studies_photo.jpg);
+    opacity: 0.8;
+}
+
+.background {
+    background-color: rgba(31, 72, 222, 0.631);
+}
+
+/* NAV CSS */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(120, 147, 149, 0.5);
+}
+
+nav .nav-section {
+    display: flex;
+    height: 5vw;
+    font-size: 2vw;
+}
+
+.nav-section * {
+    line-height: 5vw;
+    color: #FBFFFE;
+}
+
+nav .name {
+    margin-left: 5vw;
+}
+
+nav .links {
+    margin-left: 25vw;
+}
+
+.links a {
+    margin-right: 4vw;
+    padding-top: 1vw;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* INTRODUCTION CSS */
+
+.introduction-section {
+    padding-top: 5vw;
+    width: 100%;
+    height: 30vw;
+}
+
+.my-image-div {
+    width: 25%;
+    float: left;
+}
+
+.my-image {
+    height: 26vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vw;
+    display: block;
+}
+
+.my-description-div {
+    width: 75%;
+    float: left;
+}
+
+.my-title-desc {
+    padding-left: 10vw;
+    padding-right: 2vw;
+    padding-top: 5vw;
+    font-size: 4vw;
+    color: white;
+    float: left;
+}
+
+.description {
+    height: 5vw;
+    width: 50vw;
+    padding-left: 10vw;
+    padding-right: 2vw;
+    color: white;
+    float: left;
+}
+
+/* SKILLS CSS */
+
+.skills-section {
+    border-color: 2px red solid;
+}
+
+.skills-section h2 {
+    color: white;
+}
+/* PROJECTS CSS */
+/* FOOTER CSS */
+
+/* MEDIA CSS */
+@media screen and (max-width: 800px) {
+    .my-image-div {
+        width: 100%;
+    }
+
+    .my-description-div {
+      width: 100%;
+      text-align: center;
+      padding-left: 15%;
+      height: 70vw;
+    }
+
+  }
