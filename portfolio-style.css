@@ -1,19 +1,25 @@
 body {
     margin: 0;
     font-family: 'Futura', Arial, sans-serif;
-    background-color: rgb(45, 100, 45);
+    background-color: rgb(93, 93, 93);
     opacity: 0.8;
+    color: #fffdfb;
 }
 
-.background {
-    background-color: rgba(31, 72, 222, 0.631);
+body a {
+    color: #fffdfb;
+}
+
+body main {
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 /* NAV CSS */
 nav {
     position: fixed;
     width: 100%;
-    background-color: rgba(120, 147, 149, 0.5);
+    background-color: rgb(38, 38, 38);
 }
 
 nav .nav-section {
@@ -24,7 +30,7 @@ nav .nav-section {
 
 .nav-section * {
     line-height: 5vw;
-    color: #FBFFFE;
+    color: #fffdfb;
 }
 
 nav .name {
@@ -32,16 +38,12 @@ nav .name {
 }
 
 nav .links {
-    margin-left: 25vw;
+    margin-left: 35vw;
 }
 
 .links a {
     margin-right: 4vw;
     padding-top: 1vw;
-}
-
-.links a:hover {
-    text-decoration: underline;
 }
 
 /* INTRODUCTION CSS */
@@ -68,7 +70,7 @@ nav .links {
     width: 75%;
     float: left;
     margin-top: 22vw;
-    background-color: rgba(39, 48, 48, 0.5);
+    background-color: rgb(38, 38, 38);
     border-radius: 5vw;
     text-align: center;
 }
@@ -91,11 +93,13 @@ nav .links {
 /* SKILLS CSS */
 
 .skills-section {
-    background-color: rgba(39, 48, 48, 0.5);
+    background-color: rgb(38, 38, 38);
     border-radius: 5vw;
     height: 100%;
     text-align: center;
     padding-top: 5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .skills-section .skills-header {
@@ -124,6 +128,11 @@ nav .links {
     margin-right: 1vw;
 }
 
+figure img {
+    background-color: #ffffff;
+    border-radius: 1vw;
+}
+
 .programming-languages-div div {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -143,8 +152,51 @@ nav .links {
     height: 64px;
     width: 64px;
 }
+
 /* PROJECTS CSS */
+
+.projects-section {
+    background-color: rgb(38, 38, 38);
+    border-radius: 5vw;
+    height: 100%;
+    text-align: center;
+    margin-top: 5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.projects-div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.projects-section a {
+    color: white;
+}
+
+.projects-section h1 {
+    color: white;
+    height: 10%;
+    padding-top: 5%;
+}
+
+.projects-section p {
+    padding-bottom: 5%;
+}
+
 /* FOOTER CSS */
+
+footer {
+    width: 100%;
+    background-color: rgb(38, 38, 38);
+    margin-top: 5vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer div {
+    padding-left: 2vw;
+}
 
 /* MEDIA CSS */
 @media screen and (max-width: 800px) {
@@ -164,5 +216,9 @@ nav .links {
 
     .skills-photos-section div {
         margin-top: 5%;
+    }
+
+    .projects-div {
+        display: list-item;
     }
 }
