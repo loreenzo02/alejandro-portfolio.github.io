@@ -15,6 +15,15 @@ body main {
     margin-right: 1vw;
 }
 
+object {
+    width: 100%;
+
+}
+
+.nav-object {
+    height: 5vw;
+}
+
 /* NAV CSS */
 nav {
     position: fixed;
@@ -26,15 +35,12 @@ nav .nav-section {
     display: flex;
     height: 5vw;
     font-size: 2vw;
+    padding-left: 5vw;
 }
 
 .nav-section * {
-    line-height: 5vw;
+    padding-top: 1.5vw;
     color: #fffdfb;
-}
-
-nav .name {
-    margin-left: 5vw;
 }
 
 nav .links {
@@ -43,7 +49,6 @@ nav .links {
 
 .links a {
     margin-right: 4vw;
-    padding-top: 1vw;
 }
 
 /* INTRODUCTION CSS */
@@ -58,7 +63,7 @@ nav .links {
     float: left;
 }
 
-.my-image {
+.my-image-div img {
     height: 26vw;
     margin-left: auto;
     margin-right: auto;
@@ -75,7 +80,7 @@ nav .links {
     text-align: center;
 }
 
-.my-title-desc {
+.my-description-div h1 {
     font-size: 200%;
     color: white;
 }
@@ -102,7 +107,7 @@ nav .links {
     padding-right: 1vw;
 }
 
-.skills-section .skills-header {
+.skills-section h1 {
     color: white;
     height: 10%;
 }
@@ -200,6 +205,7 @@ footer div {
 
 /* MEDIA CSS */
 @media screen and (max-width: 800px) {
+    
     .my-image-div {
         width: 100%;
     }
@@ -207,11 +213,10 @@ footer div {
     .my-description-div {
       width: 100%;
       text-align: center;
-      height: 50%;
     }
 
     .skills-section {
-        margin-top: 40%;
+        margin-top: 30%;
     }
 
     .skills-photos-section div {
@@ -220,5 +225,10 @@ footer div {
 
     .projects-div {
         display: list-item;
+    }
+
+    .programming-languages-div div {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
     }
 }
